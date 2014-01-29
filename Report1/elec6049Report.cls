@@ -64,6 +64,7 @@
 %\rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
 %\chead{}\lfoot{}\rfoot{}\cfoot{}
 %\pagestyle{fancy}
+\newcommand{\sect}[1]{\section*{\MakeUppercase{#1}}}
 \renewcommand{\sectionmark}[1]{\btypeout{\thesection\space #1}}
 \renewcommand{\subsectionmark}[1]{}
 \renewcommand{\subsubsectionmark}[1]{}
@@ -106,7 +107,7 @@
 \setcounter{dbltopnumber}{9}
 \usepackage{graphicx}
 \usepackage{epstopdf}
-\usepackage[scriptsize]{subfigure}
+%%\usepackage[scriptsize]{subfigure}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage{listings}
@@ -130,6 +131,7 @@
 \pdfstringdefDisableCommands{
    \let\\\space
 }
+\newcommand*{\reportnumber}[1]{\def\repnum{#1}}
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
 \newcommand*{\customer}[1]{\def\custom{#1}}
 \newcommand*{\company}[1]{\def\coname{#1}}
@@ -173,7 +175,7 @@
     \null\vfil
     \vskip 60\p@
     \begin{center}
-      {\LARGE \@title \par}
+      {\LARGE ELEC6049: REPORT \repnum, \@title \par}
       \vskip 3em
       {\large \lineskip .75em
         \begin{tabular}[t]{c} \authornames \end{tabular}
@@ -262,10 +264,8 @@
     \newpage
     \raggedright
       \let \footnote \thanks
-      {\Huge \@title \par}
-      {\large By \authornames  \par}
-      {\large Group Number: \grpnum \par}
-      {\large Report Date: \@date}
+      {\Huge ELEC6049: REPORT \repnum, \@title \par}
+      {\large By \authornames  \\Group Number: \grpnum \\Report Date: \@date}
   }
 \fi
 \if@titlepage
@@ -298,18 +298,19 @@
 \else
   \renewenvironment{abstract}{
       \if@twocolumn
-        \section*{\abstractname}
+        \section{Abstract}
       \else
-        \small
-        \begin{center}
+%%        \small
+        \sect{Abstract}
+        %\begin{center}
           {\bfseries \abstractname\vspace{-.5em}\vspace{\z@}}
-        \end{center}
-        \quote
+        %\end{center}
+        %\quote
       \fi
-      \begin{itshape}
+     %\begin{itshape}
   }
   {
-      \end{itshape}
+      %\end{itshape}
       \if\keywordnames
       \else
         \vskip 1.5em
