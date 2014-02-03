@@ -58,19 +58,19 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset[]{0pt}
-\lfoot{\@title \\ \authornames}
+\lfoot{ELEC6049 REPORT 1: How Does Technology Make Money? - Established Companies \\ \authornames}
 \rfoot{\thepage}
-%\lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
-%\rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
-%\chead{}\lfoot{}\rfoot{}\cfoot{}
-%\pagestyle{fancy}
 \newcommand{\sect}[1]{\section*{\MakeUppercase{#1}}}
+\newcommand{\subsect}[1]{\subsection*{\textnormal{\textit{#1}}}}
 \renewcommand{\sectionmark}[1]{\btypeout{\thesection\space #1}}
 \renewcommand{\subsectionmark}[1]{}
 \renewcommand{\subsubsectionmark}[1]{}
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries\MakeUppercase}{}{0em}{}
+\titleformat{\subsection}{\itshape}{}{0em}{}
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
 \hbox{}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \newpage
 \if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
@@ -113,6 +113,8 @@
 \usepackage{listings}
 %%\usepackage{lstpatch}
 \usepackage{xifthen}
+\usepackage{array}
+\usepackage{longtable}
 \usepackage[nodayofweek]{datetime}
 \lstset{captionpos=b,
         frame=tb,
@@ -168,7 +170,7 @@
     \hypersetup{pdfkeywords={\keywordnames}}
     \markboth{\authornames}{\@title}
     \begin{titlepage}
-    \thispagestyle{empty}
+    %\thispagestyle{empty}
     \let\footnotesize\small
     \let\footnoterule\relax
     \let \footnote \thanks
@@ -222,7 +224,7 @@
     \hypersetup{pdfauthor=\authornames}
     \hypersetup{pdfkeywords=\keywordnames}
     \markboth{\authornames}{\@title}
-    \thispagestyle{empty}
+    %\thispagestyle{empty}
     \par
     \begingroup
       \renewcommand\thefootnote{\@fnsymbol\c@footnote}
@@ -245,7 +247,7 @@
         \global\@topnum\z@
         \@maketitle
       \fi
-      \thispagestyle{plain}\@thanks
+      %\thispagestyle{plain}\@thanks
     \endgroup
     \setcounter{footnote}{0}%
     \global\let\thanks\relax
@@ -265,7 +267,7 @@
     \raggedright
       \let \footnote \thanks
       {\Huge ELEC6049: REPORT \repnum, \@title \par}
-      {\large By \authornames  \\Group Number: \grpnum \\Report Date: \@date}
+      {\large By \authornames \\ Assigned group number: \grpnum \par Report Date: \@date}
   }
 \fi
 \if@titlepage
@@ -398,12 +400,13 @@
 }
 \newcommand\frontmatter{ }
 \newcommand\mainmatter{ }
-\newcommand{\bibname}{References}
+\newcommand{\bibname}{REFERENCES}
 \newcommand\backmatter{
-\clearpage
+%\clearpage
   \addtotoc{\bibname}
-  \btypeout{\bibname}
+  \btypeout{\MakeUppercase\bibname}
 }
+
 
 
 \endinput
