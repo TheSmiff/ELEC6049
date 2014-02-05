@@ -6,7 +6,7 @@
 \removecolourlinks    % Uncomment this command to remove colour from any links
 %% ----------------------------------------------------------------
 \usepackage[disable]{todonotes}
-
+\usepackage{multirow}
 \newcommand{\inote}[1] {\todo[inline]{#1}}
 \usepackage{lipsum}
 
@@ -30,14 +30,17 @@ An abstract of not more than 200 words is required. It should contain not only a
 
 \mainmatter
 \sect{Introduction}
-This should cover the general concepts and principles relevant to the report, explain constructive and destructive technologies, compliance or similar in the context of electrical/ electronic/electromechanical technologies [1]). The purpose of the introduction is to 'set the scene'.   
+
+
+This should cover the general concepts and principles relevant to the report \cite{kekale2007successful}, explain constructive \cite{ansoff1957strategies}, \cite{johnson2008exploring} and destructive technologies, compliance or similar in the context of electrical/ electronic/electromechanical technologies [1]). The purpose of the introduction is to 'set the scene'.  
+
 \subsection{Introduction Subsection}
 Use subheadings.  Subheads are especially helpful in orienting the reader [2].   However you should not be tempted to include too many subheadings - this would then yield a list with little opportunity for assessment of specific issues.  
 \sect{Report}
 \lipsum
 \backmatter
 \bibliographystyle{IEEEtrans}
-\bibliography{SpecBib}
+\bibliography{Report1Bib}
 
 \appendix
 \textbf{\uppercase{Appendix}} \par
@@ -52,16 +55,20 @@ Use subheadings.  Subheads are especially helpful in orienting the reader [2].  
 \end{longtable}
 \end{center}
 
-\clearpage
+%\clearpage
 
 \sect{2. Meeting Minutes - Kick-off Meeting}
 \begin{center}
 \begin{longtable}{| m{0.2\textwidth} | m{0.6\textwidth} |} \hline
-\textbf{Purpose} & ELEC6049 Team Meeting 1 \\ \hline
-\textbf{Date and Time} & Monday 30th September 2013 at 10:00 \\ \hline
+\textbf{Purpose} & ELEC6049 Team Kick-Off Meeting \\ \hline
+\textbf{Date and Time} & Tuesday 4th February 2014 at 12:00 \\ \hline
 \textbf{Venue} & 3rd floor Zepler Building, Highfield Campus \\ \hline
-\textbf{Participants} & TS (Tom Smith), HL (Henry Lovett), AR (Ashley Robinson)\\ \hline
+\textbf{Participants} & TJS (Tom Smith), HSL (Henry Lovett), AJR (Ashley Robinson)\\ \hline
 \textbf{Apologies} &None \\ \hline
+\multirow{4}{*}{\textbf{Agenda}} & Assign Chair for this report. \\
+ & Generate initial ideas for research. \\ 
+ & Agree expectations of work and schedule. \\
+ & Agree date and agenda of next meeting. \\ \hline
 \end{longtable}
 \end{center}
 
@@ -70,10 +77,13 @@ Use subheadings.  Subheads are especially helpful in orienting the reader [2].  
 \begin{longtable}{| p{0.05\textwidth} |>{\raggedright\arraybackslash}p{0.15\textwidth} | p{0.5\textwidth} |>{\raggedright\arraybackslash}p{0.175\textwidth}|} \hline
 \textbf{ID} & \textbf{Subject} & \textbf{Notes and Discussion} & \textbf{Action} \\ \hline
 \endhead
-1.0	&	Project Description	&	stuff	&	\textbf{HL A1.0} \\ \hline
-2.0	&	Intel Document	&	stuff	&	\textbf{TS A5.0} \\ \hline
-3.0	&	Project Management	&	stuff &	\textbf{TS A7.0} \\ \hline
-4.0	&	Research Areas	&	stuff &	\textbf{All A9.0} \\ \hline
+1.0	&	Chair	&	The group decided that TJS should be the chair for this report. Both HSL and AJR are currently pursuing job applications, hence the logical choice that TJS be chair for this report. 	&   -	 \\ \hline
+2.0	&	Case Study Ideas	&	TJS presented some ideas previously undertaken in a management module regarding Bowman's Strategy Clock, and the different strategies employed in the tablet market. The group discussed this as a case study and agreed it was interesting but obvious, but struggled to make a hypothesis. Discussions of reputation (Apple) and quality.	&-	 \\ \hline
+3.0	&	Hypothesis 1	& HSL discussed Reputation - Companies such as Intel, Apple, Microsoft rely on their reputation as an established brand to sell their products. AJR proposed quality along the same lines.  & - \\ \hline
+3.1	&	Hypothesis 2	& The group discussed collaboration in the context of ARM being fabless which enabled it to be more agile than Intel in the microprocessor market. AJR highlighted that ARM and Xilinix collaborate in the microprocessor and FPGA markets. Hypothesis is that by collaborating, estblished companies make money by reducing and spreading risks accross multiple entities. Apple is an example contradiciting the hypothesis. &	- \\ \hline
+3.2	& Hypothesis 3 & TJS proposed that smart diversification was how an established company makes money. The group discussed Apple as an example with the iPhone, iPad and Mac ranges. Also google with the search engine at the core, and Chrome and Android as diversification. Amazon with the online store at the core, and  Chrome and Adroid as smart diversification alonf the same theme. A quick look in a textbook shows that this is called ``Related Diversification''. Microsoft with OSs and XBox. The group agreed that this was a possible hypothesis. &- \\ \hline
+3.3 & Hypothesis selection & The group narrowed it down to collaboration or diversification as a topic. TJS chose to head toward the diversification hypothesis due to the strength and number of case studies. & \textbf{ALL A1.0} \textbf{All A3.0} \\ \hline
+4.0 & Milestones & The group agreed to meet again on the \textbf{11th Feb} and that by then, most research should be complete, report stubbs should be started and a clear hypothesis should be sought. The next meeting will be to put what we have together into a plan and to allocate work to complete the report by the tutorial on \textbf{18th Feb}. & \textbf{TJS A2.0} \\ \hline
 
 
 \end{longtable}
@@ -84,31 +94,29 @@ Use subheadings.  Subheads are especially helpful in orienting the reader [2].  
 \begin{longtable}{| p{0.05\textwidth} | >{\raggedright\arraybackslash}p{0.15\textwidth} |  p{0.5\textwidth} | >{\raggedright\arraybackslash}p{0.175\textwidth}|} \hline
 \textbf{ID} & \textbf{Action} & \textbf{Comments} & \textbf{Status} \\ \hline
 \endhead
-A1.0	&	 Spec.	&	action 	& Open 30th Sept \\ \hline
-A2.0	&	GitHub Repo.	&	action	&	Open 30th Sept \\ \hline
-A3.0	&	GitHub.		&	action	&	Open 30th Sept	\\ \hline
-A4.0	&	Read the Spec.	&	action	&	Open 30th Sept \\ \hline
-A5.0	&	Upload Intel Doc.	&	action	&	Open 30th Sept \\ \hline
-A6.0	&	Read Intel Doc.	&	action	&	Open 30th Sept \\ \hline
-A7.0	&	Setup meeting with Captec.	&	action	&	Open 30th Sept \\ \hline
-A8.0	&	Gantt chart.	&	action	&	Open 30th Sept	\\ \hline
-A9.0	&	Research.&	action  &	Open 30th Sept	\\ \hline	
+A1.0	&	Research	&	All to start research. Use Git Issue to highlight useful research to the group. Make notes of all sources.	& Open 4th Feb \\ \hline
+A2.0	&	Introduction	&	Define an established company. Introduce hypothesis.	&	Open 4th Feb \\ \hline
+A3.0	&	Case Study	&	Each to identify a case study for proposal to the group by next week.	&	Open 4th Feb	\\ \hline	
 \end{longtable}
 \end{center}
 
-\subsect{Next Meeting: 2nd Oct 13, following project brief with Captec.}
+\subsect{Next Meeting: 11th Feb 2014, 12:00, Level 3 Zepler, Highfield Campus.}
 
-\clearpage
+%\clearpage
 
 \sect{3. Meeting Minutes - Main meeting}
 \begin{center}
 \begin{longtable}{| m{0.2\textwidth} | m{0.6\textwidth} |} \hline
-\textbf{Purpose} & ELEC6049 Team Meeting 1 \\ \hline
-\textbf{Date and Time} & Monday 30th September 2013 at 10:00 \\ \hline
-\endhead
+\textbf{Purpose} & ELEC6049 Report Meeting \\ \hline
+\textbf{Date and Time} & Tuesday 11th February at 12:00 \\ \hline
 \textbf{Venue} & 3rd floor Zepler Building, Highfield Campus \\ \hline
-\textbf{Participants} & TS (Tom Smith), HL (Henry Lovett), AR (Ashley Robinson)\\ \hline
-\textbf{Apologies} &None \\ \hline
+\textbf{Participants} & TJS (Tom Smith), HSL (Henry Lovett), AJR (Ashley Robinson)\\ \hline
+\textbf{Apologies} & None \\ \hline
+\multirow{5}{*}{\textbf{Agenda}} & Update on research status. \\
+ & Discuss case study examples. \\ 
+ & Read any report stubs as a group. \\
+ & Identify and allocate work to finish report. \\ 
+ & Agree next meeting. \\ \hline
 \end{longtable}
 \end{center}
 
