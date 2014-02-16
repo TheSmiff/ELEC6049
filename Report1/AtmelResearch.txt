@@ -1,0 +1,32 @@
+! AtmelResearch.txt created by <+AUTHORNAME+> at Sun 16 Feb 2014 09:54:02 GMT on seblovett-Ubuntu
+! <+Last Edited: Sun 16 Feb 2014 15:29:42 GMT by seblovett on seblovett-Ubuntu +>
+
+
+Founded in 1984
+Focusses on systems build are microcontrollers
+Products: 8-bit microcontroller, 32-bit microcontroller, ARM microcontroller, RF,  Wi-Fi, EEPROM, Flash memory, security chips, touch sensors and controllers, application-specific,
+
+Started fab-lite -> bought foundaries -> sold foundaries
+
+Many Acquisitions:
+QRG
+Advanced Digital Design S.A
+IDT Corporation
+Put them in different markets.
+
+http://ir.atmel.com/releasedetail.cfm?ReleaseID=732071
+
+http://ir.atmel.com/annuals.cfm - see reports of the company. Worth getting the notes from these of profit / value and plotting over time. Can go back to 2003
+
+Stocks : https://www.google.co.uk/finance?q=NASDAQ%3AATML&ei=AsAAU8i-DYPCwAONIg
+
+Does it fit our 'established' definition?
+
+Got dates of some acquisitions, easy to judge value of compnay (>20yrs of stock info). 
+Tie these together - may see that the dates of acquisitions coincide with increase in profit?
+
+Some useful info http://www.atmel.com/about/corporate/factsheet.aspx
+
+Smart metering acquisiton http://ir.atmel.com/releasedetail.cfm?ReleaseID=746477
+
+http://companies.findthecompany.com/l/11024368/Atmel-Corporation-in-San-Jose-CA
