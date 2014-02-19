@@ -10,9 +10,13 @@
 \usepackage{multirow}
 \newcommand{\inote}[1] {\todo[inline]{#1}}
 \usepackage{lipsum}
+% sets TexCount to ignore inotes
+%TC:macro \inote 1
+%TC:macro \sect [2]
+%TC:macro \subsect [2]
 
 \begin{document}
-
+%TC:ignore
 \frontmatter
 \reportnumber{1}
 \title      {How Does Technology Make Money? - Established Companies}
@@ -24,11 +28,12 @@
 \groupnumber{14}
 
 \maketitle
-
+%TC:endignore
+%TC:break Abstract
 \begin{abstract}
 \inote{An abstract of not more than 200 words is required. It should contain not only a description of the subject and scope of coverage, but also identify the focus of the report.}
 \end{abstract}
-
+%TC:break _main_
 \mainmatter
 \input{Introduction}
 \input{Section1}
@@ -40,11 +45,12 @@
 \bibliography{Report1Bib}
 
 \appendix
+%TC:ignore
 \input{Appendix_Contributions}
 \input{Appendix_Minutes}
 %\clearpage
 \input{Appendix_LectureNotes}
 %\clearpage
-
+%TC:endignore
  
 \end{document}
