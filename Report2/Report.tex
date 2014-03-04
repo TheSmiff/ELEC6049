@@ -1,0 +1,59 @@
+%% ----------------------------------------------------------------
+%% Specification.tex
+%% ---------------------------------------------------------------- 
+\documentclass{elec6049Report}     % Use the Article Style
+%\usepackage{cite}            % Use Natbib style for the refs.
+\removecolourlinks    % Uncomment this command to remove colour from any links
+%% ----------------------------------------------------------------
+%\usepackage[disable]{todonotes}
+\usepackage{todonotes}
+\usepackage{multirow}
+\newcommand{\inote}[1] {\todo[inline]{#1}}
+\usepackage{lipsum}
+% sets TexCount to ignore inotes
+%TC:macro \inote 1
+%TC:macro \sect [2]
+%TC:macro \subsect [2]
+
+\begin{document}
+%TC:ignore
+\frontmatter
+\reportnumber{2}
+\title      {How Does Technology Make Money? - Start Up Companies}
+\authors    {
+\texorpdfstring{\href{mailto:hl13g10@ecs.soton.ac.uk}{Henry S. Lovett}}{Henry S. Lovett},
+\texorpdfstring{\href{mailto:ajr2g10@ecs.soton.ac.uk}{Ashley J. Robinson}}{Ashley J. Robinson},
+\texorpdfstring{\href{mailto:tjs1g10@ecs.soton.ac.uk}{Thomas J. Smith}}{Thomas J. Smith}}
+
+\groupnumber{14}
+
+\maketitle
+%TC:endignore
+%TC:break Abstract
+\phantomsection
+\addcontentsline{toc}{section}{Abstract}
+\begin{abstract}
+\inote{To Do}
+\end{abstract}
+%TC:break _main_
+\mainmatter
+\input{Introduction}
+\input{Section1}
+\input{Section2}
+\input{Conclusion}
+
+\backmatter
+%\inote{The references so far do not follow the required format. See the word document for the required format. I'm not sure exactly what format it is but it has more information than currently}
+\bibliographystyle{unsrt}%{ieeetr}
+\bibliography{ReportBib}
+
+\appendix
+%TC:ignore
+\input{Appendix_Contributions}
+\input{Appendix_Minutes}
+%\clearpage
+\input{Appendix_LectureNotes}
+%\clearpage
+%TC:endignore
+ 
+\end{document}
