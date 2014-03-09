@@ -58,7 +58,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset[]{0pt}
-\lfoot{ELEC6049 REPORT 1: How Does Technology Make Money? - Established Companies \\ \authornames}
+\lfoot{ELEC6049: REPORT \repnum, \ttitle}
 \rfoot{\thepage}
 \newcommand{\sect}[1]{\section*{\MakeUppercase{#1}}}
 \newcommand{\subsect}[1]{\subsection*{\textnormal{\textit{#1}}}}
@@ -142,6 +142,7 @@
 \newcommand*{\degree}[1]{\def\degreename{#1}}
 \newcommand*{\authors}[1]{\def\authornames{#1}}
 \newcommand*{\groupnumber}[1]{\def\grpnum{#1}}
+\newcommand*{\thetitle}[1]{\def\ttitle{#1}}
 \newcommand*{\addresses}[1]{\def\addressnames{#1}}
 \newcommand*{\university}[1]{\def\univname{#1} \def\UNIVNAME{\uppercase{#1}}}
 \newcommand*{\department}[1]{\def\deptname{#1} \def\DEPTNAME{\uppercase{#1}}}
