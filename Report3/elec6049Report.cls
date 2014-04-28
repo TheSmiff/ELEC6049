@@ -58,7 +58,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset[]{0pt}
-\lfoot{ELEC6049: REPORT \repnum, \ttitle}
+\lfoot{ELEC6049: REPORT \repnum, \ttitle \\ \authornames}
 \rfoot{\thepage}
 \newcommand{\sect}[1]{\section*{\MakeUppercase{#1}}}
 \newcommand{\subsect}[1]{\subsection*{\textnormal{\textit{#1}}}}
