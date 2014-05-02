@@ -6,6 +6,343 @@
 These notes are raw and not altered in any way from when they were taken from the invited presentation. These notes have been distilled and focussed through the lens of our report title and hypothesis to the content shown in section 1.
 
 \subsect{Lecture 1 - }
+Alstom - Fabrice Perot
+
+MD Alstom Grid Research and Technology Centre
+
+Alstom 130 years old. Emerged from General Electric Company in the UK. Alstom 
+
+made up of four sectors; thermal power, transport, renewable power and grid. All 
+
+four sectors are present in the UK. Alstom Gid section based in stafford. Power 
+
+transformers are built at a large factory in Stafford. They also make HVDC transformers 
+
+there. Instrument transformers, circuitbreakers and disconnectors and gas insulated 
+
+substations (GIS) are also manufactured and design within Alstom Grid but not 
+
+necessarily at Stafford. In Stafford the R and D for HVDC power electronics and 
+
+offshore substations are investigated. They also design substation automation 
+
+solutions or relays and controls as it used to be called.
+
+5 research and development centres with 4\% of Alstom sales being reinvested in 
+
+Alstom Grid R\&D. 1200 skilled engineers working on R\&D challenges including HVDC, 
+
+UHVDC and Smart Grid techniques. Experts in final element modelling and have 
+
+developed their own unique software for FEM calculations.
+
+The core competency of Alstom Grid is in High Voltage and Dielectric Materials. They 
+
+are experts in developing materials that are largely non-porous to prevent voids. 
+
+Glass fibre materials are an example of this. This helps to avoid partial discharge in 
+
+the material which can eventually lead to breakdown. Some of these materials are 
+
+employed in different industries and settings, such as the Eurostar, T45 Destroyers and 
+
+the Astute Submarines. The applications of this research are quite wide ranging.
+
+Funding is also taken on colaborative projects from the public purse. The EU HORIZON 
+
+2020 policy is one such source of funding for HV research. The technology strategy 
+
+board funds ``catapults'' to try and deploy innovation as a product. National Grid, 
+
+Scottish Power and Scottish and Southern Electric are transmition system operators 
+
+that can gain access to funding through Ofgem and a new funding system called RIIO 
+
+- Revenue = Incentives + Innovation + Outputd. The RIIO is comprised of the Network 
+
+Innovation Allowance, Network Innovation Competitions and the Low Carbon Network 
+
+Fund. These are just some of the levers available.
+
+\textbf{Energy Policy}
+
+80\% reduction of 1990 CO2 levels by 2050 and 34\% by 2022. Renewables to supply 
+
+15\% of UK energy by 2020. UK achieves about 3\% currently. This is not a very long 
+
+time in the power industry. Road transport and energy efficiency is important. The 
+
+energy trilemma is key - security, economics and emissions. The Climate Change Act 
+
+2008 and the Energy Act 2008 are key with chapters 27 and 32 respectively being the 
+
+chapters with the figures in them.
+
+In order for this to take place, the complexity of the distribution network must 
+
+increase. Energy world consumption is likely to increase by 50\% between 2007 to 
+
+2035. A huge increase in renewables is required while a huge reduction in the very 
+
+large fossil fuel powered stations.
+
+One of the European wide strategies is increased interconnection. There are vast 
+
+renewable resources, including huge amounts of wind in the North Sea, Hydro in 
+
+Norway and a massive amount of thermal solar in the North of Africa. The distances 
+
+involved are very large, with thousands of kilometres from the renewable concentrates 
+
+to the load centres. One of the ways of distributing this power is through HVDC rather 
+
+than the AC networks currently prevalent throughout distribution. Clearly there are 
+
+large techical challenges and massive political challenges in dealing with instability in 
+
+North Africa for the Solar. The wind however is a different story. The distances can be 
+
+up to 3000km, which AC transmission would simply not be cost effective. There are 
+
+numerous plans to start harnessing North Sea power and there are a few already in 
+
+deployment. These projects are very capital intensive - 100 millions of euros and can 
+
+cost Alstom dearly if the small weather window is missed to deploy the technology.
+
+\textbf{Why Do We Need HVDC?}
+
+Thomas Edison proposed DC and George Westinghouse proposed AC. Westinghouse 
+
+won due to the difficulties with DC. Transformers for DC do not exist and made it very 
+
+difficult to step up the voltage for long distance transmission. For HVDC, you start with 
+
+an AC power source and put it through a big rectifier bridge. Then you transmit the 
+
+HVDC power over the cables, then you change it back to AC at the other end. Several 
+
+types of link exist. Back to back links allow asynchronous connection, allowing 50Hz 
+
+and 60Hz networks to be connected. Point to Point is the same but has an Over Head 
+
+Line (OHL) for bulk transmission over distance. Point to Point schemes also exist in 
+
+submarine versions, where the cable is subsea and this is used for the connection of 
+
+wind farms in the North Sea. AC power is continuously charging and discharging the 
+
+capacitive impedance in the cable, resulting in large reactive power consumption. The 
+
+DC version only charges the impedance once (like a resistance) so the consumption 
+
+is much less over long distances. The HVDC scheme between France and the UK 
+
+was extremely successful, it paid for itself in just 3 years and achieves over 97\% 
+
+availability. 
+
+Another aspect of AC is space. AC for a double circuit would require six large cables - 
+
+requiring a big tunnel for heat dissipation. DC requires only one for a monopolar link 
+
+or two for a bipolar link, thus saving space. DC cables also produce less heat.
+
+AC systems require reactive compensation in the form of FACTS (Flexible AC 
+
+Transmission System) over long distances. Even though DC converter stations cost alot 
+
+of money, they do not require periodic compensation. Thus over a very long distances, 
+
+there is a distance break-even point where HVDC becomes cheaper than AC. This is 
+
+around 30 miles for underground or submarine systems and around 500 miles for 
+
+OHLs.
+
+The power rectifier is usually a 12 pulse connection. This is a six pulse grid connection 
+
+utilising 6 thyristors to produce a DC voltage. You can put two six pulse bridges 
+
+together to produce a twelve pulse bridge to allow more power to be put in the system. 
+
+You can then add two of these twelve pulse bridges together, to allow one for V+ and 
+
+one for V-. In China these run at +\-800kV and allow 5000-6000 MW to be transmitted 
+
+down just two wires. This is a huge amount of power.
+
+The key technology is thyristor technology that enables this HVDC connection. A huge 
+
+amount of tehcnology is invested in these systems. There are also VSCs (Voltage Source 
+
+Converters) which are a series of capacitors in series with the AC, and a set of insulated 
+
+gate transistors (IGCT) which switch the capacitors in and out. These are called multi-
+level converters. This technology is very useful for renewable energy connection.
+
+Thyristor valves are usually arranged in quadrivalves. The Alstom H400 valve modules 
+
+provide two stacks of thyristors in series. These are watercooled. Thyristor technology 
+
+is interesting because they fail short circuit. So they build in redundancy. Every two 
+
+years, the HVDC system undergoes maintenance. Each H400 module is arranged in 
+
+fours to make a quadrivalve and then there are six of these in a twelve pulse bridge. 
+
+These are suspended from the ceiling for seismic reasons.
+
+In early 2000s, HVDC was largely a curiosity. In China and other large countries, there 
+
+was a huge renaissance in HVDC technology. 800kV is the standard voltage for HVDC in 
+
+China. India is building it's first 800kV HVDC scheme, although it is only 2.5GW capacity 
+
+compared to the huge ones in China. In the late 80s, the Brazillian Itaupu Hydro dam 
+
+was the highest voltage introduced by ABB at 600kV. In China they are starting to think 
+
+about +\-1.1MV. Although Fabrice thinks this is probably uneconomic.
+
+One of the highest power schemes was in China. The Ningdong-Shandong +\-660kV 
+
+scgene was built. It is the world's largest single power electronic converter at 2GW. 
+
+4 converters in total, 2 at each end. It was built in pairs of valves not in quadrivalves. 
+
+These were all tested in the lab at full scale before deployment. These are very big 
+
+pieces of kit. The HVDC centre of excellence in Stafford produced a very large power 
+
+transformer suitable for these huge amounts of power.
+
+A Line Commutated Current HVDC station at Chandrapur 2x500MW back to back 
+
+station in India has a small building to hous ethe thyristors, but 440mx530m is 
+
+required to filter the high frequency harmonics from the system.
+
+\textbf{Nanotechnology}
+
+Advantages available for both AC and DC technologies. Cigre D1-40 WG Functional 
+
+Nanomaterials for Electric Power Industry was a technical brochure published at the 
+
+end of 2013. Nanotechnolog could improve the performance of dielectrics massively, 
+
+increasing safety and economics. 
+
+There is an issue understanding how the dispersion of micro and nano fillers act within 
+
+epoxy matrices. We need to understand how to make reproducible materials and try to 
+
+understand how this works and what benefits can be offered. An important research 
+
+area is the improvement of thermal conductivity while maintaining electrical resistivity. 
+
+If thermal conductivity can be increased bya factor, then the size of equipment can 
+
+be vastly reduced. Diamond is the example of this is nature. It has very good thermal 
+
+conductivity while remaining electrcially insulative. Boron Nitride is another interesting 
+
+material that could be a candidate to improve dielectric strength while improving 
+
+thermal conductivity.
+
+Epoxy-Alumina nanocomposites show promise in resisting surface discharge. Often 
+
+pollution and impurities and imperfections in the insulating material can cause partial 
+
+discharge in the form of surface discharge. The 3\% nano filler material can resist 
+
+surface discharge for extreme periods.
+
+The Technology Strategy Board funds the Alstom project, NanocompEIM. Around 20 
+
+engineers working together. It costs around a million euro for 30 months, and about 
+
+half of it is covered by the TSB. They are tackling the increased dielectric strength 
+
+while increasing thermal conductivity problem. Today they can make small quantities 
+
+of nano-materials, but they are trying to develop ways to mass manufacture when 
+
+proven. The upscale is the objective of the project. The TSB require reporting and a 
+
+focus on the deployment and demonstration of the technology.
+
+\textbf{The BIG Multi Disciplinary Challenge}
+
+A huge amount of innovation is required to meet the energy challenge in all 
+
+engineering disciplines. Mechnicals, electronics, controls\dots there is loads of 
+
+opportunities. A huge amount of investment is required. The Government is setting out 
+
+more provision for these types of challenges to be met.
+
+Will we see the planned expansion in HVDC multi-terminals systems in Europe in 
+
+our lifetime?
+
+\textbf{Questions}
+
+What currents do you transmit at? The issue with DC is that the current never goes 
+
+through zero, so the magnitude is not the problem, it is the fact it is not cyclic. Multi-
+terminal systems require very quick acting circuit breakers. The DC current for the 
+
+Chinese projects was around 4000-5000 amps. This pushes all the connections as far as 
+
+possible (6250A is around the maximum). DC is perhaps more dangerous as DC burns 
+
+you while AC stops your heart - which is worse?!?
+
+Are the 20:20:20 goals realistic? What are the financial motives in a private market? 
+
+We need to achieve it - the consequences of climate change could be catastrophic. 
+
+The finance is a huge issue. The economic climate is a big issue. Huge investment is 
+
+required. We need investment banks to be more positive.
+
+If you removed the subsidies from EU and government policies, would Alstom or any 
+
+other power equipment manufacturer be profitable? The financing of the R\&D is 
+
+an issue for governments. These require the finding mechanisms from government. 
+
+The large HVDC schemes are commercial entities, and alot of money can be made 
+
+in the private market for new transmission systems. You need to spend money as a 
+
+company in innovation to continue profitability. These funding schemes are important 
+
+to providing that lifeline. These could be viewed more as a stimulus, the Horizon 2020 
+
+schemes is of the order 70 billion euro. It is quite important therefore that these 
+
+continue, but perhaps this is since electricity is vital, if intel's chip R\&D halted, we 
+
+would probably be OK for a short while.
+
+What about itnegrating micro generation in the grid and how invested is Alstom 
+
+in meeting governement targets? Innovation is required throughout the industry. 
+
+Even in AC, work is undertaken to leakproof SF6 systems and ultimately to find a 
+
+non-greenhouse effect insulating Gas. Also mineral oil coolant for transformers 
+
+contaminates the ground in the event of a leak, and burns in an accident. Research 
+
+into vegetable oil coolants could be useful if regulations change to disallow or penalise 
+
+mineral oils (or SF6 mentioned prior). There is a huge amount of innovation required 
+
+and Alstom is constantly trying to stay one step ahead of the crowd.
 \subsect{Lecture 2 - }
 \subsect{Lecture 3 - }
 
